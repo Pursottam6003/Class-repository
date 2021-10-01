@@ -33,9 +33,9 @@ public class Lab4
         System.out.println("Do you have the locker system if yes type -- locker otherwise no-locker");
         String security= Sc.next();
 
-        Bank b1 = new Bank("STATE BANK OF INDIA ", "3456GHSID");
+//         Bank b1 = new Bank("STATE BANK OF INDIA ", "3456GHSID");
 
-        Customer c1 = new Customer();
+        Customer c1 = new Customer("STATE BANK OF INDIA ", "3456GHSID");
         c1.Cust(Acc_no, name, place ,phone, balance, Occupation,security);
 
         double x = c1.Eligible();
@@ -52,7 +52,7 @@ class Bank
     String IFSC;
    
     String Name;
-
+    Bank(){};
     Bank(String name, String code) {
         this.Name = name;
         this.IFSC = code;
@@ -60,7 +60,7 @@ class Bank
     }
 }
 
-class Customer
+class Customer extends Bank
 {
     String name;
     long account_number;
@@ -69,7 +69,10 @@ class Customer
     String Bank_services;
     double bal;
     String Occupation;
-
+    Customer(String BankName,String IFSC){
+    super(BankName,IFSC);
+    }
+    
     public void Cust(long x, String name, String address, long count, double b, String o, String ser) {
         this.account_number = x;
         this.bal = b;
