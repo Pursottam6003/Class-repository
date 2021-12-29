@@ -1,15 +1,9 @@
 /**
-* <h1>Add Two Numbers!</h1>
-* The AddNum program implements an application that
-* simply adds two given integer numbers and Prints
-* the output on the screen.
-* <p>
-* <b>Note:</b> Giving proper comments in your program makes it more
-* user friendly and it is assumed as a high quality code.
+* <h1>Bank loan Enquiry!</h1>
 *
-* @author  Zara Ali
-* @version 1.0
-* @since   2014-03-31
+* @author  Pursottam Sah
+* @version 2.0
+* @since   2021 -12-28
 */
 
 import java.util.Scanner;
